@@ -25,9 +25,25 @@ RSpec.describe Post, type: :model do
   it 'CommentsCounter must be an integer greater than or equal to zero' do
     post.comments_counter = nil
     expect(post).to_not be_valid
+    post.comments_counter = 'foo'
+    expect(post).to_not be_valid
+    post.comments_counter = -1
+    expect(post).to_not be_valid
+    post.comments_counter = 5
+    expect(post).to be_valid
+    post.comments_counter = 0
+    expect(post).to be_valid
   end
   it 'LikesCounter must be an integer greater than or equal to zero' do
     post.likes_counter = nil
     expect(post).to_not be_valid
+    post.likes_counter = 'foo'
+    expect(post).to_not be_valid
+    post.likes_counter = -1
+    expect(post).to_not be_valid
+    post.likes_counter = 5
+    expect(post).to be_valid
+    post.likes_counter = 0
+    expect(post).to be_valid
   end
 end

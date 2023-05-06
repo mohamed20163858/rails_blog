@@ -9,6 +9,18 @@ RSpec.describe User, type: :model do
   it 'PostsCounter must be an integer greater than or equal to zero' do
     subject.posts_counter = nil
     expect(subject).to_not be_valid
+
+    subject.posts_counter = 'foo'
+    expect(subject).not_to be_valid
+
+    subject.posts_counter = -1
+    expect(subject).not_to be_valid
+
+    subject.posts_counter = 0
+    expect(subject).to be_valid
+
+    subject.posts_counter = 5
+    expect(subject).to be_valid
   end
   it 'PostsCounter must be zero when intialized' do
     expect(subject.posts_counter).to equal(0)
