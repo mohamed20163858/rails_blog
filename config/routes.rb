@@ -14,4 +14,15 @@ Rails.application.routes.draw do
   delete '/comments/:comment_id', to: 'comments#destroy', as: 'comment'
   post '/likes', to: 'likes#create'
 
+  namespace :api do
+    namespace :v1 do
+      resources "users", only: %i[index show] do
+        resources "posts", only: %i[index show new create destroy] do
+          resources "comments", only: %i[index show new create destroy]
+          resources "likes", only: %i[create destroy]
+        end
+      end
+    end
+  end
+
 end
