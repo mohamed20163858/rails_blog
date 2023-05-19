@@ -129,6 +129,12 @@ and here is a list of things that are being tested :-
 - Twitter: [@mohamed20163858](https://twitter.com/mohamed20163858)
 - LinkedIn: [MohamedMohsenSaleh](https://www.linkedin.com/in/mohamedmohsensaleh/)
 
+👤 **Amen Tetteh**
+
+- GitHub: [@amentetteh](https://github.com/amentetteh)
+- Twitter: [@amentetteh](https://twitter.com/amentetteh)
+- LinkedIn: [amentetteh](https://www.linkedin.com/in/amentetteh/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
