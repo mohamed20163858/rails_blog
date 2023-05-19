@@ -136,6 +136,17 @@ and here is a list of things that are being tested :-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!--  Features -->
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- add messanger box
+- add some relationships between users like friends, followers,..etc.
+- add some privacy control to each user 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
