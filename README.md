@@ -2,7 +2,6 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Blog project</b></h3>
@@ -134,7 +133,7 @@ and here is a list of things that are being tested :-
 - GitHub: [@amentetteh](https://github.com/amentetteh)
 - Twitter: [@amentetteh](https://twitter.com/amentetteh)
 - LinkedIn: [amentetteh](https://www.linkedin.com/in/amentetteh/)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -144,6 +143,11 @@ and here is a list of things that are being tested :-
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+I would like to thank rails community for their continous support and thank my partner [Amen](https://github.com/amentetteh) for his help  and support to build this awesome project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
