@@ -91,7 +91,7 @@ RSpec.describe 'User post index page Capybara integration test', type: :system d
     first_user = User.first
     visit "/users/#{first_user.id}/posts"
     sleep(1)
-    #id = page.find_all('.post')[0][:id]
+    # id = page.find_all('.post')[0][:id]
     page.find_all('.post')[0].click
     expect(page).to have_current_path("/users/#{first_user.id}/posts")
   end
