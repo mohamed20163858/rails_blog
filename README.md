@@ -85,6 +85,48 @@ You can download the page by clicking in the code green button and select Downlo
 
 To run the project just open your terminal, then change the directory to the location of this repo using this command `cd file_path`, and finally run this command `gem install rails` then `rails s`.
 
+# walkthrough application 
+in this pull request I added an authentication roles for all users in the blog as following: - 
+- admin users can read, create , destroy any post or comment in the blog 
+- post or comment owner can destroy their own posts or comments only 
+- default users can only read or create posts and comments 
+this is done by adding role column in users table then install cancancan authenticaton gem 
+finally here is a step by step guide to how test the blog functionalities 
+1- intialize rails app by running these commands 
+![image](https://user-images.githubusercontent.com/22921170/213010432-218be7d0-eaeb-4a6b-9dec-4963ab7a6172.png)
+![image](https://user-images.githubusercontent.com/22921170/213011094-0acd01a3-fc9c-4991-8207-bea6b7da0a52.png)
+2- navigate to blog home page  http://127.0.0.1:3000 it will redirect you to login page just click sign up in nav menu 
+then fill the sign up form 
+![image](https://user-images.githubusercontent.com/22921170/224332907-ef575b16-4695-47c2-a7c6-b75100c700b0.png)
+![image](https://user-images.githubusercontent.com/22921170/224333073-5dfe7234-f248-49bd-919b-ee8edc8b2d21.png)
+3-  
+devise will send you confirmation mail including confirmation link and cause it is just in development you will see the mail inside the terminal you executed `rails s ` command and here is a screenshot of the mail 
+![image](https://user-images.githubusercontent.com/22921170/213012786-d730ace5-1ae1-4264-93e1-9926237fb65a.png)
+just copy the confirmation link and paste it in your browser tab 
+it will redirect you to this page 
+![image](https://user-images.githubusercontent.com/22921170/224338620-2f7d0bf0-160f-4a3a-a0f0-2b2333acbeed.png)
+now click login and you will find yourself in this page 
+![image](https://user-images.githubusercontent.com/22921170/213013223-604f90f7-29ed-4525-9c6b-b8f600a71db5.png)
+4- now try to choose Tom and jump into his posts page you will notice you cannot see any button to delete his posts or comments 
+![image](https://user-images.githubusercontent.com/22921170/224455095-324a3ec3-e893-4c96-9222-6954139910ae.png)
+try to write any comment you will see you can see delete comment link click it and your comment will be deleted 
+![image](https://user-images.githubusercontent.com/22921170/224455192-97ba4f9b-4f4f-4c1d-9959-fb02cae4fe36.png)
+![image](https://user-images.githubusercontent.com/22921170/224455220-dbdbf28c-24ac-4eb4-b1dd-f92791ff98fc.png)
+![image](https://user-images.githubusercontent.com/22921170/224455242-5352bbbc-db17-447e-942f-3deb4445f578.png)
+5- return to users page using nav bar then choose yourself and create a post and some comments inside it 
+![image](https://user-images.githubusercontent.com/22921170/224455451-0755e058-8199-4c82-962c-674707fabeb0.png)
+![image](https://user-images.githubusercontent.com/22921170/224455536-033c9dfa-814d-4017-9d21-0f2c741802e9.png)
+now try to delete one of your own comments then try to delete your post you notice it will direct you to users page 
+![image](https://user-images.githubusercontent.com/22921170/224455630-f45f3215-5c03-413a-8872-dfba35fe793e.png)
+![image](https://user-images.githubusercontent.com/22921170/224455642-b86c5f32-ce66-4d36-876a-ed422967879e.png)
+![image](https://user-images.githubusercontent.com/22921170/224455650-fbe0ce22-58b2-4f4b-9f5e-bdf7eaaaa287.png)
+![image](https://user-images.githubusercontent.com/22921170/224455684-c754c6e2-46c6-45dd-b59b-0b285be74338.png)
+5- now try to make yourself an admin using `rails c` in your terminal 
+![image](https://user-images.githubusercontent.com/22921170/224457821-dcf1da04-39a3-4a24-89ec-e9e82cf6eafa.png)now return back to users page and choose tom again and jump into his posts page you will able now to see delete buttons in both post and any existed comments
+![image](https://user-images.githubusercontent.com/22921170/224457868-562f198a-014e-411e-8167-095b9eea82c2.png)
+![image](https://user-images.githubusercontent.com/22921170/224457877-6397d588-8b0a-40a7-a500-383510ab07b4.png)
+![image](https://user-images.githubusercontent.com/22921170/224457885-28882189-8a86-4180-9497-527bc6c918f3.png)
+![image](https://user-images.githubusercontent.com/22921170/224457906-7c53dd4d-a8c1-44f5-8515-72e2ed9a6522.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
