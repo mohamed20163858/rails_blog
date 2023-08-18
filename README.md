@@ -85,7 +85,7 @@ You can download the page by clicking in the code green button and select Downlo
 
 To run the project just open your terminal, then change the directory to the location of this repo using this command `cd file_path`, and finally run this command `gem install rails` then `rails s`.
 
-# walkthrough application 
+### walkthrough application 
 in this pull request I added an authentication roles for all users in the blog as following: - 
 - admin users can read, create , destroy any post or comment in the blog 
 - post or comment owner can destroy their own posts or comments only 
@@ -127,6 +127,13 @@ now try to delete one of your own comments then try to delete your post you noti
 ![image](https://user-images.githubusercontent.com/22921170/224457877-6397d588-8b0a-40a7-a500-383510ab07b4.png)
 ![image](https://user-images.githubusercontent.com/22921170/224457885-28882189-8a86-4180-9497-527bc6c918f3.png)
 ![image](https://user-images.githubusercontent.com/22921170/224457906-7c53dd4d-a8c1-44f5-8515-72e2ed9a6522.png)
+
+Beside you can treat this app as API as well and here are some fetched information using Thunderclient visual studio extension 
+![image](https://user-images.githubusercontent.com/88512874/225288675-3305b674-3306-4f85-b9c0-2603865a8ec7.png)
+![image](https://user-images.githubusercontent.com/88512874/225288804-5bf960f4-38c2-46df-be51-a3687e2dbd6b.png)
+![image](https://user-images.githubusercontent.com/88512874/225288886-acfb29d5-36be-41b3-8d79-ad025ea824e4.png)
+![image](https://user-images.githubusercontent.com/88512874/225288969-b17e31d6-083f-495f-ba0d-96b136584246.png)
+![image](https://user-images.githubusercontent.com/88512874/225289070-74e4538b-8279-46ff-8d16-4657b4e4d2fe.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
