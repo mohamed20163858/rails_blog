@@ -11,16 +11,14 @@
     <p><%= @user.bio %></p>
   </div>
   <% @user.posts.each_with_index do |post, i| %>
-    <div class="post" id="<%= post.id %>">
+    <div class="post" id="<%= post.id %>" onclick="redirectFunction(<%= post.id %>)">
     <h2><%= post.title %></h2>
     <p><%= post.text %></p>
     <p class="reactions">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %> </p>
     </div>
   <% end %>
   <button onclick="seePostsFunction(<%= @user.id %>)">See all posts</button> 
-  <%if @user.id == @current_user.id %>
-    <button onclick="createPostFunction(<%=@user.id%>)">Create post</button>
-  <%end%>
+  <button onclick="createPostFunction(<%=@user.id%>)">Create post</button>
 </div>
 <script>
   function seePostsFunction(id) {
@@ -28,5 +26,8 @@
   }
   function createPostFunction(id) {
     window.location.href = "/posts/new"
+  }
+  function redirectFunction (id) {
+  window.location.href += "/posts/" + id;
   }
 </script>

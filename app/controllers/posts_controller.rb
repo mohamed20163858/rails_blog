@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @user = User.find_by(id: params[:user_id].to_i)
   end
@@ -24,6 +25,17 @@ class PostsController < ApplicationController
         format.html { render "/users/#{current_user.id}/posts/#{@post.id}" }
       end
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id].to_i)
+    comments = @post.comments
+    likes = @post.likes
+    comments.destroy_all
+    likes.destroy_all
+    @post.destroy
+
+    redirect_to root_path, status: :see_other
   end
 
   def post_params
