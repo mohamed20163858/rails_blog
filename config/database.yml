@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: microverse_blog_production
-  username: microverse_blog
-  password: <%= ENV["MICROVERSE_BLOG_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
