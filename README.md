@@ -78,6 +78,9 @@ coming soon
 ## Macos
 coming soon
 
+## Live Demo 
+[link](https://rails-blog-nhes.onrender.com)
+
 ### Setup
 You can download the page by clicking in the code green button and select Download ZIP or if you are a developer. You can get the https link or ssh link just copy it and use your favourite command line git interface and write this `git clone https://github.com/mohamed20163858/blog_project.git` if you use https or write `git clone git@github.com:mohamed20163858/blog_project.git` if you use ssh
 
