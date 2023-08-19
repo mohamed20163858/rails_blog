@@ -18,11 +18,11 @@
         <p><%= User.find_by(id:comment.author_id).name%>: <%= comment.text %></p>
       <% end %>
     </div>
-    <button onclick="seePostFunction(<%=@user.id%>, <%=post.id%>)" id="<%=post.id%>">Pagination</button>
+    <button onclick="seePostFunction(<%=@user.id%>, this)" id="<%=post.id%>">Pagination</button>
   <% end %>
 </div>
 <script>
-  function seePostFunction(user_id, post_id) {
-     window.location.href = "posts/"+post_id;
+  function seePostFunction(user_id, e) {
+     window.location.href = "posts/"+ e.id;
   }
 </script>
